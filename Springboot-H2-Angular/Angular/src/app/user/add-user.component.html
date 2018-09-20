@@ -1,0 +1,21 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add User</h2>
+  <form>
+    <div class="form-group">
+      <label for="salary">Salary:</label>
+      <input [(ngModel)]="user.salary" placeholder="Mention your salary" name="salary" class="form-control" id="salary">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input [(ngModel)]="user.name" placeholder="Your Full Name please !!" name="name" class="form-control" id="name">
+    </div>
+
+    <div class="form-group">
+      <label for="teamName">Team Name:</label>
+      <input [(ngModel)]="user.teamName" placeholder="What's your team name ?" name="teamName" class="form-control" id="teamName">
+    </div>
+
+    <button class="btn btn-success" (click)="createUser()">Create</button>
+  </form>
+</div>
